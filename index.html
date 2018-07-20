@@ -1,0 +1,2094 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="carousel/css/jQuery.verticalCarousel.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="container-fluid">
+            <div class="header-tablet-desktop">
+                <div class="row no-gutters">
+                    <div class="col-md-2 headerLogo">
+                        <img src="img/logo.png" alt="Grok Auto" class="img-fluid">
+                    </div>
+                    <div class="col-md-4 header-search-custom">
+                        <div class="input-group input-group-sm mb-3 headerSearch">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text input-prepend" id="inputGroup-sizing-sm">
+                                    <img src="img/input.png" class="img-fluid" alt="">
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Search by Make Model Year, Product Type, Part Number or Brand..." aria-label="Username"
+                                aria-describedby="inputGroup-sizing-sm">
+                            <div class="input-group-append">
+                                <span class="input-group-text input-prepend-search" id="inputGroup-sizing-sm">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <ul class="header-menu list-inline">
+                            <li class="list-inline-item">
+                                <a href="#">Seat Covers</a>
+                            </li>
+
+                            <li class="list-inline-item">
+                                <a href="#">Floor Mats</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Car Covers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 header-custom">
+                        <div class="header-flex-inline">
+                            <div class="headerHelp">
+                                <p class="headerHelp__heading">Let Us Help You</p>
+                                <ul class="list-inline headerHelp__block">
+                                    <li class="list-inline-item">
+                                        <p class="headerHelp__block-tel">Toll Free:
+                                            <a href="tel:8668664132">(866) 866 - 4132</a>
+                                        </p>
+                                    </li>
+                                    <li class="list-inline-item headerHelp__block-helpCenter">Help Center</li>
+                                </ul>
+                            </div>
+                            <span class="header-divider"></span>
+                            <div class="headerAccount">
+                                <div class="headerAccount__account">
+                                    <p class="headerAccount__account-title">My Account</p>
+                                    <p class="headerAccount__account-signin">Hello.
+                                        <span>Sign In</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <span class="header-divider"></span>
+
+                            <div class="headerAccount__cart">
+                                <a href="#">
+                                <span class="headerAccount__cart-icon">
+                                    <img src="img/cart.png" class="img-fluid" alt="cart">
+                                    <span>5</span>
+                                </span>
+                                <span class="headerAccount__cart-title">
+                                    <p>Cart</p>
+                                </span>
+                            </a>
+                            </div>
+                        </div>
+
+                        <div class="headerPayment">
+                            <p>We accept:</p>
+                            <img src="img/visa.png" alt="visa">
+                            <img src="img/mastercard.png" alt="mastercard">
+                            <img src="img/Amex.png" alt="amex">
+                            <img src="img/paypal.png" alt="paypal">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="header-mobile">
+                <div class="row no-gutters">
+                    <div class="col-1 col-sm-1 hamburger">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-4 col-sm-4 custom-flex-center-XY">
+                        <img src="img/logo.png" class="headerLogo img-fluid" alt="logo">
+                    </div>
+                    <div class="col-1 col-sm-1 custom-flex-center-XY">
+                        <img src="img/mobile-search.png" class="mobile-search img-fluid" alt="mobile-search">
+                    </div>
+                    <div class="col-5 col-sm-5 header-mobile-tel custom-flex-center-XY">
+                        <div class="header-mobile-tel-icon">
+                            <img src="img/phone.png" class="img-fluid" alt="phone">
+                        </div>
+                        <span>
+                            <p>Toll Free:</p>
+                            <p>
+                                <a href="tel:8668664132">(866) 866 - 4132</a>
+                            </p>
+                        </span>
+                    </div>
+                    <div class="col-1 col-sm-1 custom-flex-center-XY">
+                        <div class="headerAccount__cart">
+                            <a href="#">
+                            <span class="headerAccount__cart-icon custom-flex-center-XY">
+                                <img src="img/cart.png" class="img-fluid" alt="cart">
+                                <span>5</span>
+                            </span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="mobile-menu">
+                <i class="fa fa-times hamburger" aria-hidden="true"></i>
+                <ul class="mobile-menu">
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#">About</a></li>
+                    <li> <a href="#">Contact</a></li>
+                    <li> <a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="section-1">
+                       <ol class="breadcrumb">
+                         <li class="breadcrumb-item"><a href="#">Seat Covers</a></li>
+                         <li class="breadcrumb-item"><a href="#">CoverKing</a></li>
+                         <li class="breadcrumb-item active">Genuine Leather Custom Seat Covers</li>
+                       </ol> 
+                         
+                       <div class="verticalCarousel ">
+                         <div class="verticalCarouselHeader">
+                           <a href="#" class="vc_goDown section-1__prev">
+                             <i class="fa fa-angle-up" aria-hidden="true"></i>
+                           </a>
+                           <a href="#" class="vc_goUp section-1__next">
+                             <i class="fa fa-angle-down" aria-hidden="true"></i>
+                           </a>
+                         </div>
+                         <ul class="verticalCarouselGroup vc_list">
+                           <li>
+                             <div class="section-img-1">
+                                 <a href="#section-1__img-1">
+                                    <img src="img/section-1__menu.png" class="section-1__img-menu focus-section section-1__img-bg" alt="">
+                             </a>
+                             </div>
+                           </li>
+                           <li>
+                                <div class="section-img-1">
+                                    <a href="#section-1__img-2">
+                                        <img src="img/section-1__menu.png" class="section-1__img-menu focus-section" alt="">
+                                    </a>
+                                </div>
+                           </li>
+                           <li>
+                             <div class="section-img-1">
+                                <a href="#section-1__img-3">
+                                    <img src="img/section-1__menu-1.png" class="section-1__img-menu focus-section img-top" alt="">
+                                </a>
+                                
+                             </div>
+                           </li>
+                           <li>
+                             <div class="section-img-1">
+                                <a href="#section-1__img-4">
+                                    <img src="img/section-1__menu-2.png" class="section-1__img-menu focus-section" alt="">
+                                </a>
+                                
+                             </div>
+                           </li>
+                          <li>
+                            <div class="section-img-1">
+                                <a href="#section-1__img-5">
+                                    <img src="img/section-1__menu.png" class="section-1__img-menu focus-section" alt="">
+                                </a>
+                               
+                            </div>
+                          </li>
+
+                         </ul>
+                       </div>
+                        <div class="row section-1__top ">
+                             <div class=" col-sm-12 flex-first flex-md-unordered col-md-6 section-1-img">
+                                <div class="owl-carousel item-1" >
+                                    <div class="item" data-hash="section-1__img-1">
+                                         <img src="img/section-bg-1.png" class="img-fluid" alt="Seats">
+                                     </div>
+                                     <div class="item" data-hash="section-1__img-2">
+                                         <img src="img/section-bg-1.png" class="img-fluid" alt="Seats">
+                                     </div>
+                                     <div class="item" data-hash="section-1__img-3">
+                                         <img src="img/section-bg-1.png" class="img-fluid" alt="Seats">
+                                     </div>
+                                     <div class="item" data-hash="section-1__img-4">
+                                         <img src="img/section-bg-1.png" class="img-fluid" alt="Seats">
+                                     </div>
+                                     <div class="item" data-hash="section-1__img-5">
+                                         <img src="img/section-bg-1.png" class="img-fluid" alt="Seats">
+                                     </div>
+                                     <div class="item" data-hash="section-1__img-6">
+                                         <img src="img/section-bg-1.png" class="img-fluid" alt="Seats">
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 order-first order-md-2 col-md-6 section-1-text bottom-b">
+                                <div class="row b-section1__row .no-gutters">
+                                    <div class="col-md-12 col-lg-12 col-xl-8 b-section1--pad">
+                                        <div class="section-1-text__heading">
+                                            <div class="section-1-text__headingWrapper">
+                                                <a href="#" class="section-1-text__heading-title">Genuine Leather Custom Seat Covers</a>
+                                                <p class="section-1-text__heading-subtitle">CoverKing</p>
+                                                <div class="section-1-text__description-stars">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <span class="section-1-text__description-reviews">
+                                                        <span>2,021</span> reviews</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="section-1-text__headingPriceWrapper">
+                                            <p class="section-1-text__heading-price-title">Starting From</p>
+                                            <p class="section-1-text__heading-price">$398
+                                                <span>.94</span>
+                                            </p>
+                                             <div class="section-1__box">
+                                                <div class="section-1__box-img">
+                                                    <img src="img/section-icon-1.png" alt="">
+                                                </div>
+                                                <div class="section-1__box-item">
+                                                    <div class="section-1__box-title">free</div>
+                                                    <div class="section-1__box-text">
+                                                        <span class="section-1__box-span">2-day</span> 
+                                                    shipping</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-xl-4 section-b">
+                                     
+                                        
+                                        <div class="section-1__item">
+                                            <div class="row">
+                                                <div class="col-4 col-sm-5 col-md-5 col-lg-4 col-xl-12 section-1-left section-row ">
+                                                    <div class="section-1__item-icon">
+                                                        <span class="section-1__item-text">Share:</span>
+                                                        <a href="#">
+                                                            <img src="img/email-icon.png" alt="email"></a>
+                                                        <a href="#">
+                                                            <img src="img/twitter-icon.png" alt="email"></a>
+                                                        <a href="#">
+                                                            <img src="img/facebook-icon.png" alt="email"></a>
+                                                        <a href="#">
+                                                            <img src="img/google-plus-icon.png" alt="email"></a>
+                                                        <a href="#">
+                                                            <img src="img/pinterest-icon.png" alt="email"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-8 col-sm-7 col-xl-12 col-md-7 col-lg-8 section-1-left">
+                                                    <div class="section-1__item-phone">
+                                                        <h1 class="section-1__title-phone"> Let us help you</h1>
+                                                        <div class="section-1__box-phone">
+                                                            <div class="img-block">
+                                                                <img src="img/icon-phone.png" alt="icon-phone">
+                                                                <div class="section-1__box-span2">Toll Free: 
+                                                                    <span class="section-1__box-span">(866) 866 - 4132</span></div>
+                                                            </div>
+                                                            <div class="img-block2">    
+                                                                <img src="img/icon-question.png" class="section-1__img1" alt="icon-phone" >
+                                                                <div class="section-1__box-span1">Live Chat</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           
+                                           
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                              
+                             
+                                <div class="section-1-text__description">
+                                   <div class="row">
+                                       <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                        <div class="row section-1__down">
+                                            <div class="col-lg-2 col-md-3 col-sm-2 col-1 ">
+                                                     <img src="img/section-icon-3.png" class="section-1-icon" alt="3">
+                                             </div>
+                                             <div class="col-lg-10  col-md-9 col-sm-2 col-3">
+                                                     <p class="section-1__icon-text">Seat Airbag Compatible</p>
+                                                   </div>
+                                        </div>
+                                       </div>
+                                      <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                        <div class="row section-1__down">
+                                            <div class="col-lg-2 col-md-3 col-1 col-sm-2">
+                                                     <img src="img/section-icon-4.png" class="section-1-icon" alt="3">
+                                             </div>
+                                             <div class="col-lg-10 col-md-9 col-3 col-sm-2">
+                                                     <p class="section-1__icon-text">Heated Seat Compatible</p>
+                                                   </div>
+                                        </div>
+                                       </div>
+                                      <div class="col-lg-4 col-md-4 col-sm-4 col-4 pad">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-3 col-1 col-sm-2 col-xs-2">
+                                                     <img src="img/section-icon-5.png" class="section-1-icon" alt="3">
+                                             </div>
+                                             <div class="col-lg-10 col-md-9 col-3 col-sm-2 col-xs-10">
+                                                     <p class="section-1__icon-text">Easy Installation</p>
+                                                   </div>
+                                        </div>
+                                       </div>
+                                   </div>
+                                   
+                                   
+                              
+                                </div>
+                                <div class="section-1-text__colors">
+                                    <span>Available Colors</span>
+                                    <div class="section-1__img-item">
+                                        <img src="img/section-1-color-1.png" alt="Seats Color">
+                                        <img src="img/section-1-color-2.png" alt="Seats Color">
+                                        <img src="img/section-1-color-3.png" alt="Seats Color"> 
+                                        <img src="img/section-3-img-1-color-3.png" alt="Seats Color">
+                                        <img src="img/section-3-img-1-color-3.png" alt="Seats Color">
+                                        <img src="img/section-3-img-5.png" alt="Seats Color">
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                           
+                        </div>
+                        </div>
+                     </div>
+                        
+               
+        </div>
+          
+        <div class="section-2-spec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 section-title--one text-center">
+                       What Do You Drive?
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="section-2-spec-wrapper">
+                            <div>
+                                <div class="dropdown show">
+                                    <a class="btn btn-secondary dropdown-toggle" href="#1" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                       >
+                                        <span>Step 1</span>
+                                        <br>
+                                        <span>Select Year...</span>
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#1">2012</a>
+                                        <a class="dropdown-item" href="#1">2013</a>
+                                        <a class="dropdown-item" href="#1">2014</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown show">
+                                    <a class="btn btn-secondary dropdown-toggle" href="#2" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                       >
+                                        <span>Step 2</span>
+                                        <br>
+                                        <span>Select Make...</span>
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#2">Ford</a>
+                                        <a class="dropdown-item" href="#2">Opel</a>
+                                        <a class="dropdown-item" href="#2">Bmv</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="dropdown show">
+                                    <a class="btn btn-secondary dropdown-toggle" href="#3" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                        >
+                                        <span>Step 3</span>
+                                        <br>
+                                        <span>Select Model...</span>
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item " href="#3">F-150</a>
+                                        <a class="dropdown-item" href="#3">F-200</a>
+                                        <a class="dropdown-item" href="#3">F-500</a>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary section-2-spec__shopByVehicleBtn">Configure vehicle</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-change">
+            <div class="container">
+               <ul class="nav justify-content-center" id="myTab" role="tablist">
+                 <li class="nav-item">
+                    <div class="section-home__title">Seats</div>
+                   <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                   </a>
+
+                 </li>
+                 <li class="nav-item nav-item-2">
+                    <div class="section-home__title">Color</div>
+                   <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"></a>
+                 </li>
+                 <li class="nav-item">
+                    <div class="section-home__title title-row">Options</div>
+                   <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"></a>
+                 </li>
+               </ul>
+               <div class="tab-content " id="myTabContent">
+                 <div class="tab-pane fade  show active " id="home" role="tabpanel" aria-labelledby="home-tab ">
+                     <div class="row section-change--down">
+                         <div class="col-lg-4 col-md-4">
+                            <div class="section-change__box">
+                                <div class="section-change__box__title">Rear Only</div>
+                                <div class="section-change__box__text">Starting From</div>
+                                <div class="section-change__box__price">$ 199.47</div>
+                                <img src="img/change-bg-1.png" alt="change 1" class="section-change__box__img"> 
+                                <div class="section-change__box-item">
+                                    <img src="img/check-icon.png" alt="">
+                                    <div class="section-change__box-text2">Cost Effective</div>
+                                </div>
+                                  <div class="section-change__box-item">
+                                    <img src="img/check-icon.png" alt="">
+                                    <div class="section-change__box-text2">Great for Kids</div>
+                                </div>
+                               <button type="button" class="btn btn-primary section-change__box-btn">Configure</button>
+
+                             </div>
+                         </div>
+                         <div class="col-lg-4 col-md-4">
+                             <div class="section-change__box">
+                                <div class="section-change__box__title">Front Only</div>
+                                <div class="section-change__box__text">Starting From</div>
+                                <div class="section-change__box__price">$ 219.47</div>
+                                <img src="img/change-bg-2.png" alt="change 1" class="section-change__box__img"> 
+                                <div class="section-change__box-item">
+                                    <img src="img/check-icon.png" alt="">
+                                    <div class="section-change__box-text2">Most Popular</div>
+                                </div>
+                                  <div class="section-change__box-item">
+                                    <img src="img/check-icon.png" alt="">
+                                    <div class="section-change__box-text2">Great for a Daily Driver</div>
+                                </div>
+                               <button type="button" class="btn btn-primary section-change__box-btn">Configure</button>
+
+                             </div>
+                         </div>
+                         <div class="col-lg-4 col-md-4 section-focus section-after">
+                            <div class="section-change__item-before">
+                                <div class="section-change__item-before__title">Best Value</div>
+                                <div class="section__star">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                                <div class="section-change__item-before__text">20% OFF</div>
+                            </div>    
+                             <div class="section-change__box1">
+                                <div class="section-change__box__title">Full Coverage</div>
+                                <div class="section-change__box__text">Starting From</div>
+                                <div class="section-change__box__price-mod">$ 598.94</div>
+                                <div class="section-change__box__price">$ 398.94</div>
+                                <img src="img/change-bg-3.png" alt="change 1" class="section-change__box__img1"> 
+                                <div class="section-change__box-item">
+                                    <img src="img/check-icon.png" alt="">
+                                    <div class="section-change__box-text2">Best Value, Save 20%</div>
+                                </div>
+                                  <div class="section-change__box-item">
+                                    <img src="img/check-icon.png" alt="">
+                                    <div class="section-change__box-text2">Complete Protection</div>
+                                </div>
+                               <button type="button" class="btn btn-primary section-change__box-btn ">Configure</button>
+
+                             </div>
+                         </div>
+                     </div>
+                     <div class="row section-change__block">
+                         <div class="col-lg-3 col-md-6 col-sm-6">
+                             <div class="section-change__item">
+                                 <img src="img/change-item-1.png" class="section-change__item-img" alt="">
+                                 <div class="section-change__item-text">40/20/40 w/ Folddown Opening Console and 3 Adjustable Headrests</div>
+                                  <button type="button" class="btn btn-primary section-change__box-btn">Choose Type</button>
+                             </div>
+
+                         </div>
+                         <div class="col-lg-3 col-md-6 col-sm-6">
+                             <div class="section-change__item">
+                                 <img src="img/change-item-1.png" class="section-change__item-img" alt="">
+                                 <div class="section-change__item-text">40/20/40 w/ Folddown Solid Arm and 3 Adjustable Headrests</div>
+                                  <button type="button" class="btn btn-primary section-change__box-btn">Choose Type</button>
+                             </div>
+                         </div>
+                         <div class="col-lg-3 col-md-6 col-sm-6">
+                             <div class="section-change__item">
+                                 <img src="img/change-item-2.png" class="section-change__item-img" alt="">
+                                 <div class="section-change__item-text1">Buckets w/ Adjustable Headrests</div>
+                                  <button type="button" class="btn btn-primary section-change__box-btn">Choose Type</button>
+                             </div>
+                         </div>
+                         <div class="col-lg-3 col-md-6 col-sm-6">
+                             <div class="section-change__item">
+                                 <img src="img/change-item-3.png" class="section-change__item-img" alt="">
+                                 <div class="section-change__item-text section-width">60/40 Split Back and Bottom w/ Pullout Arm and 3 Adjustable Headrests </div>
+                                  <button type="button" class="btn btn-primary section-change__box-btn">Choose Type</button>
+                             </div>
+                         </div>
+                         
+                     </div>
+                        <div class="section-change__box-link section-change__block">   
+                             <button type="button" class="btn btn-primary section-change__btn">Previous</button>
+                             <i class="fa fa-angle-left section-change__arrow"></i>
+                         </div>
+
+                 </div>
+                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                     <div class="row section-change--down ">
+                          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                             <div class="section-change__item">
+                                 
+                                 <div class="section-change__item-text2 ">Black</div>
+                                 <img src="img/seats-image-1.png" class="section-change__item-img1" alt="">
+                                 <div class="section-change__item__bg"></div>
+                                  <button type="button" class="btn btn-primary section-change__box-btn btn-w">Select Color</button>
+                             </div>
+                         </div>
+                           <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                             <div class="section-change__item">
+                                 
+                                 <div class="section-change__item-text2 ">Black w/ Charcoal</div>
+                                 <img src="img/seats-image-2.png" class="section-change__item-img1" alt="">
+                                 <div class="section-change__item__bg1"></div>
+                                 <div class="section-change__item__bg2"></div>
+                                  <button type="button" class="btn-top btn btn-primary section-change__box-btn btn-w1">Select Color</button>
+                             </div>
+                         </div>
+                           <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                             <div class="section-change__item">
+                                 
+                                 <div class="section-change__item-text2 ">Black w/ Beige</div>
+                                 <img src="img/seats-image-3.png" class="section-change__item-img1" alt="">
+                                  <div class="section-change__item__bg1"></div>
+                                 <div class="section-change__item__bg1 color-light"></div>
+                                  <button type="button" class="btn-top btn btn-primary section-change__box-btn btn-w1">Select Color</button>
+                             </div>
+                         </div>
+                          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                             <div class="section-change__item">
+                                 
+                                 <div class="section-change__item-text2 ">Black w/ Gray</div>
+                                 <img src="img/seats-image-4.png" class="section-change__item-img1" alt="">
+                                 <div class="section-change__item__bg1"></div>
+                                <div class="section-change__item__bg1 color-gray"></div>
+                                  <button type="button" class="btn-top btn btn-primary section-change__box-btn btn-w1 btn-up">Select Color</button>
+                             </div>
+                         </div>
+                          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                             <div class="section-change__item">
+                                 
+                                 <div class="section-change__item-text2 ">Beige</div>
+                                 <img src="img/seats-image-5.png" class="section-change__item-img1" alt="">
+                                 <div class="section-change__item__bg color-brown"></div>
+                                  <button type="button" class="btn-top btn btn-primary section-change__box-btn btn-w">Select Color</button>
+                             </div>
+                         </div>
+                          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                             <div class="section-change__item">
+                                 
+                                 <div class="section-change__item-text2 ">Gray</div>
+                                 <img src="img/seats-image-6.png" class="section-change__item-img1" alt="">
+                                 <div class="section-change__item__bg color-gray"></div>
+                                  <button type="button" class="btn-top btn btn-primary section-change__box-btn btn-w">Select Color</button>
+                             </div>
+                         </div>
+                         
+                     </div>
+                     <div class="section-change__box-link"> 
+                          <button type="button" class="btn btn-primary section-change__btn">Previous</button>
+                          <i class="fa fa-angle-left section-change__arrow1"></i>
+                      </div>
+                 </div>
+                 <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                     <div class="row section-change--down">
+                         <div class="col-lg-4 col-md-4">
+                            <div class="section-change__box">
+                                <div class="section-change__box__title">Just Seat Covers</div>
+                                <div class="section-change__box__price">$ 179.47</div>
+                                <img src="img/seat-image-7.png" alt="change 1" class="section-change__box__img"> 
+                                <div class="section-change__box-item">
+                                    <div class="section-change__box-text2">Leatherette Material</div>
+                                </div>
+                                  <div class="section-change__box-item">
+                                    <div class="section-change__box-text2">Custom Seat Covers</div>
+                                </div>
+                                <div class="section-change__box-item">
+                                    <div class="section-change__box-text2">Seat Airbag Compatible</div>
+                                </div>
+                               <button type="button" class="btn btn-primary section-change__box-btn">Add to Cart</button>
+
+                             </div>
+                         </div>
+                           <div class="col-lg-4 col-md-4 section-focus section-after">
+                            <div class="section-change__item-before">
+                                <div class="section-change__item-before__title">Best Value</div>
+                                <div class="section__star">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                                <div class="section-change__item-before__text">20% OFF</div>
+                            </div>    
+                             <div class="section-change__box1">
+                                <div class="section-change__box__title">Premium Seat Cover Set</div>
+                                <div class="section-change__box__price-mod">$ 319.94</div>
+                                <div class="section-change__box__price">$ 219.47</div>
+                                <img src="img/change-bg-3.png" alt="change 1" class="section-change__box__img1"> 
+                               <div class="section-change__box-item">
+                                   <div class="section-change__box-text2">Leatherette Material</div>
+                               </div>
+                                 <div class="section-change__box-item">
+                                   <div class="section-change__box-text2">Custom Seat Covers</div>
+                               </div>
+                               <div class="section-change__box-item ">
+                                   <div class="section-change__box-text2">Seat Airbag Compatible</div>
+                               </div>
+                               <div class="box_item">
+                                  <img src="img/plus.png"  alt="">
+                                </div>
+                               <div class="section-change__box-item">
+                                   <img src="img/check-icon.png" alt="">
+                                   <div class="section-change__box-text2">Headrest Covers</div>
+                               </div>
+                                 <div class="section-change__box-item">
+                                   <img src="img/check-icon.png" alt="">
+                                   <div class="section-change__box-text2">Map Pockets (on rear)</div>
+                               </div>
+                               <button type="button" class="btn btn-primary section-change__box-btn">Add to Cart</button>
+
+                             </div>
+                         </div>
+                         <div class="col-lg-4 col-md-4">
+                             <div class="section-change__box">
+                                <div class="section-change__box__title">Genuine Leather Set</div>
+                                <div class="section-change__box__price">$ 409.47</div>
+                                <img src="img/seat-image-8.png" alt="change 1" class="section-change__box__img"> 
+                                <div class="section-change__box-item">
+                                    <div class="section-change__box-text2">Leatherette Material</div>
+                                </div>
+                                  <div class="section-change__box-item">
+                                    <div class="section-change__box-text2">Map Pockets (on rear)</div>
+                                </div>
+                                <div class="section-change__box-item ">
+                                    <div class="section-change__box-text2">Genuine Leather Inserts</div>
+                                </div>
+                                <div class="box_item">
+                                  <img src="img/plus.png"  alt="">
+                                </div>
+                                <div class="section-change__box-item">
+                                    <img src="img/check-icon.png" alt="">
+                                    <div class="section-change__box-text2">Headrest Covers</div>
+                                </div>
+                                  <div class="section-change__box-item">
+                                    <img src="img/check-icon.png" alt="">
+                                    <div class="section-change__box-text2">Map Pockets (on rear)</div>
+                                </div>
+                                <div class="section-change__box-item">
+                                    <img src="img/check-icon.png" alt="">
+                                    <div class="section-change__box-text2">Genuine Leather Inserts</div>
+                                </div>
+                               <button type="button" class="btn btn-primary section-change__box-btn">Add to Cart</button>
+
+                             </div>
+                         </div>
+                       
+                     </div>
+                   <div class="section-change__box-link"> 
+                        <button type="button" class="btn btn-primary section-change__btn">Previous</button>
+                        <i class="fa fa-angle-left section-change__arrow1"></i>
+                    </div>
+                 </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="section-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 section-title text-center-up">
+                        Product Details
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-9">
+                        
+                        <div class="section-3__head">Elegant, Classy & Soft</div>
+                        <div class="section-3__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur tellus a leo condimentum bibendum. Aenean id pulvinar leo. Curabitur dui arcu, consectetur at urna eget, elementum convallis lectus. Sed sit amet porta nisi. Mauris nulla est, vestibulum vitae mi sed, volutpat gravida eros. Quisque sed tincidunt nulla, vitae aliquam quam. Sed maximus pellentesque leo sit amet tempus.
+                        </div>
+                        <div class="row section-3__line">
+                            <div class="col-md-7 col-7">
+                                <div class="section-3__row">
+                                    <div class="section-3__row-box">
+                                        <div class="section-3__box-title">Features:  </div>
+                                        <div class="section-3__box-item section-3__box-pad">
+                                            <img src=" img/okay.png" alt="">
+                                            <div class="section-3__item">Genuine top-grade American leather</div>
+                                        </div>
+                                         <div class="section-3__box-item">
+                                            <img src=" img/okay.png" alt="">
+                                            <div class="section-3__item">Custom manufactured to fit the exact specifications of your seats</div>
+                                        </div>
+                                         <div class="section-3__box-item">
+                                            <img src=" img/okay.png" alt="">
+                                            <div class="section-3__item">Genuine top-grade American leather</div>
+                                        </div>
+                                         <div class="section-3__box-item">
+                                            <img src=" img/okay.png" alt="">
+                                            <div class="section-3__item">Easy to clean and maintained</div>
+                                        </div>
+                                         <div class="section-3__box-item">
+                                            <img src=" img/okay.png" alt="">
+                                            <div class="section-3__item">Breathable leather</div>
+                                        </div>
+                                         <div class="section-3__box-item">
+                                            <img src=" img/okay.png" alt="">
+                                            <div class="section-3__item">UV treated for added protection for rotting, mildew and stains</div>
+                                        </div>
+                                          <div class="section-3__box-item">
+                                            <img src=" img/okay.png" alt="">
+                                            <div class="section-3__item">Three available options (black, gray, beige)</div>
+                                        </div>
+                                          <div class="section-3__box-item">
+                                            <img src=" img/okay.png" alt="">
+                                            <div class="section-3__item">Easy to install in less than 30 minutes</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-5 col-5">
+                                <img class="section-3__img" src="img/section-3-bg.png" alt="1"> 
+                                 </div>
+                        </div>
+                         <div class="section-3__head section-3__head-top">Enhance Your Driving Experience with Luxurious Leather</div>
+                        <div class="section-3__text">
+                            Aliquam euismod erat at mauris blandit lobortis. Vestibulum turpis ligula, pretium nec dui sit amet, ultrices pulvinar orci. Maecenas et neque sed eros  pharetra maximus sit amet ac leo. Quisque ut leo a risus vestibulum elementum. Duis nec ligula ut nunc rhoncus ultrices. 
+                        </div>
+                         <div class="section-3__item-title">Product information</div>
+                        <div class="row b-section-3__top">
+                            <div class="col-lg-5 col-md-12">
+                                <div class="b-section-3_table">
+                                    <div class="b-section-3_table-row1"> Package Dimensions:</div>
+                                    <div class="b-section-3_table-row">20.0 x 6.0 x 23.0 inches</div>
+                                </div>
+                                <div class="b-section-3_table">
+                                    <div class="b-section-3_table-row1"> Item weight:</div>
+                                    <div class="b-section-3_table-row">Between 7.0 - 12.0 pounds</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="b-section-3__price">
+                                    <div class="b-section-3__price-title">2-Year Low Price Guarantee
+                                    </div>
+                                    <div class="b-section-3__price-text">Every product on our site is backed by a 2-Year Low Price Guarantee.</div>
+                                    <div class="b-section-3__price-link">Would you like to tell us 
+                                       <a href="#"><span class="b-section-3__price-link1">About a Lower Price</span></a> ?</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">  <div class="b-section-3__price">
+                                    <div class="b-section-3__price-title">Warranty & Support
+                                    </div>
+                                    <div class="b-section-3__price-text">Coverking warrants that its Products will be free from defects in material and workmanship for 2 Years from the date of purchase by the Original Purchaser. </div>
+                                 
+                                </div></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="b-section-3__box-bg ">
+                            <div class="b-section-3__bg-title">Recently Viewed </div>
+                            <div class="owl-carousel section-3-carousel">
+                                <div id="view-1">
+                                    <div class="row b-section-3__up .no-gutters">
+                                        <div class="col-md-2 col-3 col-sm-2 col-lg-3">
+                                            <img src="img/recentle-1.png" class="section-3__img1" alt="">
+                                        </div>
+                                        <div class="col-md-4 col-lg-9 col-9 col-sm-4">
+                                            <div class="b-section-3__bg-list section-3-carousel__card">
+                                        <div class="card-header card-header-sect3">
+                                            <a href="#">Plush Custom Floor Mats</a>
+                                            <div class="card-rating">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                 <span class="section-3-carousel__description-reviews">
+                                                <span>80</span> reviews</span>
+                                               
+                                            </div>
+                                             <div class="section-3-carousel__cardPrice">
+                                                <p class="section-3-carousel__cardPrice-title">From</p>
+                                                <p>
+                                                    $74<span></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                  <div class="col-md-2 col-sm-2 col-3 col-lg-3">
+                                            <img src="img/recentle-2.png" class="section-3__img1" alt="">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-9 col-lg-9">
+                                            <div class="b-section-3__bg-list section-3-carousel__card">
+                                        <div class="card-header card-header-sect3">
+                                            <a href="#">Leather Seat Covers</a>
+                                            <div class="card-rating">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                 <span class="section-3-carousel__description-reviews">
+                                                <span>231</span> reviews</span>
+                                               
+                                            </div>
+                                             <div class="section-3-carousel__cardPrice">
+                                                <p class="section-3-carousel__cardPrice-title">From</p>
+                                                <p>
+                                                    $94<span>.57</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-lg-3 col-3">
+                                            <img src="img/recentle-3.png" class="section-3__img1" alt="">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-9 col-lg-9">
+                                            <div class="b-section-3__bg-list section-3-carousel__card">
+                                        <div class="card-header card-header-sect3">
+                                            <a href="#">Triguard Universal Cover</a>
+                                            <div class="card-rating">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                 <span class="section-3-carousel__description-reviews">
+                                                <span>231</span> reviews</span>
+                                               
+                                            </div>
+                                             <div class="section-3-carousel__cardPrice">
+                                                <p class="section-3-carousel__cardPrice-title">From</p>
+                                                <p>
+                                                    $56<span>.22</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                  <div class="col-md-2 col-sm-2 col-lg-3 col-3">
+                                            <img src="img/recentle-1.png" class="section-3__img1" alt="">
+                                        </div>
+                                        <div class="col-lg-9 col-md-4 col-sm-4 col-9">
+                                            <div class="b-section-3__bg-list section-3-carousel__card">
+                                        <div class="card-header card-header-sect3">
+                                            <a href="#">Plush Custom Floor Mats</a>
+                                            <div class="card-rating">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                 <span class="section-3-carousel__description-reviews">
+                                                <span>80</span> reviews</span>
+                                               
+                                            </div>
+                                             <div class="section-3-carousel__cardPrice">
+                                                <p class="section-3-carousel__cardPrice-title">From</p>
+                                                <p>
+                                                    $74<span></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-lg-3 col-3">
+                                            <img src="img/recentle-2.png" class="section-3__img1" alt="">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-lg-9 col-9">
+                                            <div class="b-section-3__bg-list section-3-carousel__card">
+                                        <div class="card-header card-header-sect3">
+                                            <a href="#">Leather Seat Covers</a>
+                                            <div class="card-rating">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                 <span class="section-3-carousel__description-reviews">
+                                                <span>231</span> reviews</span>
+                                               
+                                            </div>
+                                             <div class="section-3-carousel__cardPrice">
+                                                <p class="section-3-carousel__cardPrice-title">From</p>
+                                                <p>
+                                                    $94<span>.57</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                  <div class="col-md-2 col-lg-3 col-sm-2 col-3">
+                                            <img src="img/recentle-3.png" class="section-3__img1" alt="">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-9 col-lg-9">
+                                            <div class="b-section-3__bg-list section-3-carousel__card">
+                                        <div class="card-header card-header-sect3">
+                                            <a href="#">Triguard Universal Cover</a>
+                                            <div class="card-rating">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                 <span class="section-3-carousel__description-reviews">
+                                                <span>231</span> reviews</span>
+                                               
+                                            </div>
+                                             <div class="section-3-carousel__cardPrice">
+                                                <p class="section-3-carousel__cardPrice-title">From</p>
+                                                <p>
+                                                    $56<span>.22</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                 
+
+                                    </div>
+
+                                </div> 
+
+                                 <div id="view-1">
+                                    <div class="row b-section-3__up .no-gutters">
+                                        <div class="col-md-2 col-3 col-sm-2 col-lg-3">
+                                            <img src="img/recentle-1.png" class="section-3__img1" alt="">
+                                        </div>
+                                        <div class="col-md-4 col-lg-9 col-9 col-sm-4">
+                                            <div class="b-section-3__bg-list section-3-carousel__card">
+                                        <div class="card-header card-header-sect3">
+                                            <a href="#">Plush Custom Floor Mats</a>
+                                            <div class="card-rating">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                 <span class="section-3-carousel__description-reviews">
+                                                <span>80</span> reviews</span>
+                                               
+                                            </div>
+                                             <div class="section-3-carousel__cardPrice">
+                                                <p class="section-3-carousel__cardPrice-title">From</p>
+                                                <p>
+                                                    $74<span></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                  <div class="col-md-2 col-sm-2 col-3 col-lg-3">
+                                            <img src="img/recentle-2.png" class="section-3__img1" alt="">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-9 col-lg-9">
+                                            <div class="b-section-3__bg-list section-3-carousel__card">
+                                        <div class="card-header card-header-sect3">
+                                            <a href="#">Leather Seat Covers</a>
+                                            <div class="card-rating">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                 <span class="section-3-carousel__description-reviews">
+                                                <span>80</span> reviews</span>
+                                               
+                                            </div>
+                                             <div class="section-3-carousel__cardPrice">
+                                                <p class="section-3-carousel__cardPrice-title">From</p>
+                                                <p>
+                                                    $94<span>.57</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-lg-3 col-3">
+                                            <img src="img/recentle-3.png" class="section-3__img1" alt="">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-9 col-lg-9">
+                                            <div class="b-section-3__bg-list section-3-carousel__card">
+                                        <div class="card-header card-header-sect3">
+                                            <a href="#">Triguard Universal Cover</a>
+                                            <div class="card-rating">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                 <span class="section-3-carousel__description-reviews">
+                                                <span>80</span> reviews</span>
+                                               
+                                            </div>
+                                             <div class="section-3-carousel__cardPrice">
+                                                <p class="section-3-carousel__cardPrice-title">From</p>
+                                                <p>
+                                                    $56<span>.22</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                  <div class="col-md-2 col-sm-2 col-lg-3 col-3">
+                                            <img src="img/recentle-1.png" class="section-3__img1" alt="">
+                                        </div>
+                                        <div class="col-lg-9 col-md-4 col-sm-4 col-9">
+                                            <div class="b-section-3__bg-list section-3-carousel__card">
+                                        <div class="card-header card-header-sect3">
+                                            <a href="#">Plush Custom Floor Mats</a>
+                                            <div class="card-rating">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                 <span class="section-3-carousel__description-reviews">
+                                                <span>80</span> reviews</span>
+                                               
+                                            </div>
+                                             <div class="section-3-carousel__cardPrice">
+                                                <p class="section-3-carousel__cardPrice-title">From</p>
+                                                <p>
+                                                    $74<span></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-lg-3 col-3">
+                                            <img src="img/recentle-2.png" class="section-3__img1" alt="">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-lg-9 col-9">
+                                            <div class="b-section-3__bg-list section-3-carousel__card">
+                                        <div class="card-header card-header-sect3">
+                                            <a href="#">Leather Seat Covers</a>
+                                            <div class="card-rating">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                 <span class="section-3-carousel__description-reviews">
+                                                <span>231</span> reviews</span>
+                                               
+                                            </div>
+                                             <div class="section-3-carousel__cardPrice">
+                                                <p class="section-3-carousel__cardPrice-title">From</p>
+                                                <p>
+                                                    $94<span>.57</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                  <div class="col-md-2 col-lg-3 col-sm-2 col-3">
+                                            <img src="img/recentle-3.png" class="section-3__img1" alt="">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-9 col-lg-9">
+                                            <div class="b-section-3__bg-list section-3-carousel__card">
+                                        <div class="card-header card-header-sect3">
+                                            <a href="#">Triguard Universal Cover</a>
+                                            <div class="card-rating">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                 <span class="section-3-carousel__description-reviews">
+                                                <span>231</span> reviews</span>
+                                               
+                                            </div>
+                                             <div class="section-3-carousel__cardPrice">
+                                                <p class="section-3-carousel__cardPrice-title">From</p>
+                                                <p>
+                                                    $56<span>.22</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                 
+
+                                    </div>
+
+                                </div> 
+                            </div>
+
+                        </div>
+                        <span class="section-3-CarouselArrows__prev">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        </span>
+                        <span class="section-3-CarouselArrows__next">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="section-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 text-center section-title text-center-up">Product Reviews</div>
+                </div>
+
+                <div class="row">
+                    <div class="d-none d-lg-block col-lg-2 col-md-2">
+                        
+                        <img src="img/section-4__bg.png" class="section-4__img" class="section-4__img" alt="4">
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-sm-3 col-4">
+                        <div class="section-4__average">
+                            <div class="section-4__average-title">
+                                Average rating
+                            </div>
+                            <div class="section-4__average-number">4.5</div>
+                            <div class="section-4__average-number">5</div>
+                             <div class="section-4__card ">
+                                        <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                        <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                        <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                        <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                        <i class="fa fa-star fa-section-3 color-gr" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-9 col-lg-8 col-sm-9 col-8">
+                        <div class="section-4__line">
+                            <div class="section-4__line-head">CoverKing</div>
+                            <div class="section-4__line-title">Genuine Leather Custom Seat Covers</div>
+                            <div class="row section-4__media">
+                                <div class="col-lg-3 col-sm-6 col-md-3 col-6">
+                                    <div class="section-4__line_box">
+                                         <div class="section-4__line-desc">Appearance</div>
+                                        <div class="section-4__line-numb">5</div>
+                                    </div>
+                                   
+                                </div>
+                                <div class="col-lg-3 col-sm-6 col-md-3 col-6">
+                                      <div class="section-4__line_box1">
+                                         <div class="section-4__line-desc">Instalation</div>
+                                        <div class="section-4__line-numb">4</div>
+                                    </div>
+                                </div>
+                                <div class=" col-lg-3 col-sm-6 col-md-3 col-6">
+                                      <div class="section-4__line_box">
+                                         <div class="section-4__line-desc">Price / Value</div>
+                                        <div class="section-4__line-numb">5</div>
+                                    </div>
+                                </div>
+                                <div class=" col-lg-3 col-sm-6 col-md-3 col-6">
+                                      <div class="section-4__line_box1">
+                                         <div class="section-4__line-desc">Quality</div>
+                                        <div class="section-4__line-numb">4</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row section-4--top">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4">
+                        <div class="section-4__box-left">
+                            <div class="section-4__box">
+                                <div class="section-4__average-number1">4.5</div>
+                                <div class="section-4__average-number1">5</div>
+                                <div class="section-4__average-title section-4__average-title1">
+                                Average rating
+                                 <div class="section-4__card ">
+                                            <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                            <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                            <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                            <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                             <i class="fa fa-star fa-section-3 color-gr" aria-hidden="true"></i>
+                                          
+                                </div>
+                            </div>
+
+                            </div>
+                            <div class="row section-4__level-top">
+                                <div class="col-12 ">
+                                     <div class="section-4__level">
+                                <div class="section-4__level-title">Appearance</div>
+                                <div class="section-4__level-text">5</div>
+                            </div>
+                                </div>
+                            </div>
+                             <div class="row section-4__level-top">
+                                <div class="col-12 ">
+                                     <div class="section-4__level">
+                                <div class="section-4__level-title1">Appearance</div>
+                                <div class="section-4__level-text">4</div>
+                            </div>
+                                </div>
+                            </div>
+                             <div class="row section-4__level-top">
+                                <div class="col-12 ">
+                                     <div class="section-4__level">
+                                <div class="section-4__level-title">Appearance</div>
+                                <div class="section-4__level-text">5</div>
+                            </div>
+                                </div>
+                            </div>
+                             <div class="row section-4__level-top">
+                                <div class="col-12 ">
+                                     <div class="section-4__level">
+                                <div class="section-4__level-title1">Appearance</div>
+                                <div class="section-4__level-text">4</div>
+                            </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-sm-8 col-8">
+                        <div class="section-4__box-right">
+                            <div class="section-4__box-title-r">
+                                Impressed with the look and feel
+                            </div>
+                            <div class="section-4__box-desc-r">
+                               By Diana  <span class="section-4__box-span">January 12 2018</span> 
+                            </div>
+                            <div class="section-4__box-head">2017 Honda Ridgeline</div>
+                            <div class="section-4__box-text2">Vivamus tempus, odio eget pulvinar aliquam, dui lectus blandit nisi, sed consequat mi risus et lectus. Quisque eget ante at odio scelerisque faucibus. Aenean fringilla vestibulum rutrum. Fusce congue eros lorem, et ultrices sapien convallis molestie. Integer mattis, purus non blandit ullamcorper, ante sem facilisis ante, non commodo mauris dolor vel velit. Proin quis varius lorem, quis suscipit ligula. Morbi ac sodales elit. Aenean finibus sit amet lectus at varius.
+                            </div>
+                            <div class="section-4__box-text3">Was this review helpful for you?</div>
+                            <img src="img/like-button.png" class="section-4__box-img1" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row section-4--top">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4">
+                        <div class="section-4__box-left">
+                            <div class="section-4__box">
+                                <div class="section-4__average-number1">4.8</div>
+                                <div class="section-4__average-number1">5</div>
+                                <div class="section-4__average-title section-4__average-title1">
+                                Average rating
+                                 <div class="section-4__card ">
+                                            <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                            <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                            <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                            <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                             <i class="fa fa-star fa-section-3 color-gr" aria-hidden="true"></i>
+                                          
+                                </div>
+                            </div>
+
+                            </div>
+                            <div class="row section-4__level-top">
+                                <div class="col-12 ">
+                                     <div class="section-4__level">
+                                <div class="section-4__level-title">Appearance</div>
+                                <div class="section-4__level-text">5</div>
+                            </div>
+                                </div>
+                            </div>
+                             <div class="row section-4__level-top">
+                                <div class="col-12 ">
+                                     <div class="section-4__level">
+                                <div class="section-4__level-title1">Appearance</div>
+                                <div class="section-4__level-text">4</div>
+                            </div>
+                                </div>
+                            </div>
+                             <div class="row section-4__level-top">
+                                <div class="col-12 ">
+                                     <div class="section-4__level">
+                                <div class="section-4__level-title">Appearance</div>
+                                <div class="section-4__level-text">5</div>
+                            </div>
+                                </div>
+                            </div>
+                             <div class="row section-4__level-top">
+                                <div class="col-12 ">
+                                     <div class="section-4__level">
+                                <div class="section-4__level-title1">Appearance</div>
+                                <div class="section-4__level-text">4</div>
+                            </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-sm-8 col-8">
+                        <div class="section-4__box-right">
+                            <div class="section-4__box-title-r">
+                                Impressed with the look and feel
+                            </div>
+                            <div class="section-4__box-desc-r">
+                               By Diana  <span class="section-4__box-span">January 12 2018</span> 
+                            </div>
+                            <div class="section-4__box-head">2017 Honda Ridgeline</div>
+                            <div class="section-4__box-text2">Vivamus tempus, odio eget pulvinar aliquam, dui lectus blandit nisi, sed consequat mi risus et lectus. Quisque eget ante at odio scelerisque faucibus. Aenean fringilla vestibulum rutrum. Fusce congue eros lorem, et ultrices sapien convallis molestie. Integer mattis, purus non blandit ullamcorper, ante sem facilisis ante, non commodo mauris dolor vel velit. Proin quis varius lorem, quis suscipit ligula. Morbi ac sodales elit. Aenean finibus sit amet lectus at varius.
+                            </div>
+                            <div class="section-4__box-text3">Was this review helpful for you?</div>
+                            <img src="img/like-button.png" class="section-4__box-img1" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row section-4--top">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4">
+                        <div class="section-4__box-left">
+                            <div class="section-4__box">
+                                <div class="section-4__average-number1">5.0</div>
+                                <div class="section-4__average-number1">5</div>
+                                <div class="section-4__average-title section-4__average-title1">
+                                Average rating
+                                 <div class="section-4__card ">
+                                            <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                            <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                            <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                            <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                             <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                          
+                                </div>
+                            </div>
+
+                            </div>
+                            <div class="row section-4__level-top">
+                                <div class="col-12 ">
+                                     <div class="section-4__level">
+                                <div class="section-4__level-title">Appearance</div>
+                                <div class="section-4__level-text">5</div>
+                            </div>
+                                </div>
+                            </div>
+                             <div class="row section-4__level-top">
+                                <div class="col-12 ">
+                                     <div class="section-4__level">
+                                <div class="section-4__level-title1">Appearance</div>
+                                <div class="section-4__level-text">4</div>
+                            </div>
+                                </div>
+                            </div>
+                             <div class="row section-4__level-top">
+                                <div class="col-12 ">
+                                     <div class="section-4__level">
+                                <div class="section-4__level-title">Appearance</div>
+                                <div class="section-4__level-text">5</div>
+                            </div>
+                                </div>
+                            </div>
+                             <div class="row section-4__level-top">
+                                <div class="col-12 ">
+                                     <div class="section-4__level">
+                                <div class="section-4__level-title1">Appearance</div>
+                                <div class="section-4__level-text">4</div>
+                            </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-sm-8 col-8">
+                        <div class="section-4__box-right">
+                            <div class="section-4__box-title-r">
+                                Impressed with the look and feel
+                            </div>
+                            <div class="section-4__box-desc-r">
+                               By Diana  <span class="section-4__box-span">January 12 2018</span> 
+                            </div>
+                            <div class="section-4__box-head">2017 Honda Ridgeline</div>
+                            <div class="section-4__box-text2">Vivamus tempus, odio eget pulvinar aliquam, dui lectus blandit nisi, sed consequat mi risus et lectus. Quisque eget ante at odio scelerisque faucibus. Aenean fringilla vestibulum rutrum. Fusce congue eros lorem, et ultrices sapien convallis molestie. Integer mattis, purus non blandit ullamcorper, ante sem facilisis ante, non commodo mauris dolor vel velit. Proin quis varius lorem, quis suscipit ligula. Morbi ac sodales elit. Aenean finibus sit amet lectus at varius.
+                            </div>
+                            <div class="section-4__box-text3">Was this review helpful for you?</div>
+                            <img src="img/like-button.png" class="section-4__box-img1" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row section-4--top">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4">
+                        <div class="section-4__box-left">
+                            <div class="section-4__box">
+                                <div class="section-4__average-number1">4.5</div>
+                                <div class="section-4__average-number1">5</div>
+                                <div class="section-4__average-title section-4__average-title1">
+                                Average rating
+                                 <div class="section-4__card ">
+                                            <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                            <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                            <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                            <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                             <i class="fa fa-star fa-section-3 color-gr" aria-hidden="true"></i>
+                                          
+                                </div>
+                            </div>
+
+                            </div>
+                            <div class="row section-4__level-top">
+                                <div class="col-12 ">
+                                     <div class="section-4__level">
+                                <div class="section-4__level-title">Appearance</div>
+                                <div class="section-4__level-text">5</div>
+                            </div>
+                                </div>
+                            </div>
+                             <div class="row section-4__level-top">
+                                <div class="col-12 ">
+                                     <div class="section-4__level">
+                                <div class="section-4__level-title1">Appearance</div>
+                                <div class="section-4__level-text">4</div>
+                            </div>
+                                </div>
+                            </div>
+                             <div class="row section-4__level-top">
+                                <div class="col-12 ">
+                                     <div class="section-4__level">
+                                <div class="section-4__level-title">Appearance</div>
+                                <div class="section-4__level-text">5</div>
+                            </div>
+                                </div>
+                            </div>
+                             <div class="row section-4__level-top">
+                                <div class="col-12 ">
+                                     <div class="section-4__level">
+                                <div class="section-4__level-title1">Appearance</div>
+                                <div class="section-4__level-text">4</div>
+                            </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-sm-8 col-8">
+                        <div class="section-4__box-right">
+                            <div class="section-4__box-title-r">
+                                Impressed with the look and feel
+                            </div>
+                            <div class="section-4__box-desc-r">
+                               By Diana  <span class="section-4__box-span">January 12 2018</span> 
+                            </div>
+                            <div class="section-4__box-head">2017 Honda Ridgeline</div>
+                            <div class="section-4__box-text2">Vivamus tempus, odio eget pulvinar aliquam, dui lectus blandit nisi, sed consequat mi risus et lectus. Quisque eget ante at odio scelerisque faucibus. Aenean fringilla vestibulum rutrum. Fusce congue eros lorem, et ultrices sapien convallis molestie. Integer mattis, purus non blandit ullamcorper, ante sem facilisis ante, non commodo mauris dolor vel velit. Proin quis varius lorem, quis suscipit ligula. Morbi ac sodales elit. Aenean finibus sit amet lectus at varius.
+                            </div>
+                            <div class="section-4__box-text3">Was this review helpful for you?</div>
+                            <img src="img/like-button.png" class="section-4__box-img1" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row section-4--up">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4">
+                        <div class="section-4__box-left">
+                            <div class="section-4__box">
+                                <div class="section-4__average-number1">4.8</div>
+                                <div class="section-4__average-number1">5</div>
+                                <div class="section-4__average-title section-4__average-title1">
+                                Average rating
+                                 <div class="section-4__card ">
+                                            <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                            <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                            <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                            <i class="fa fa-star fa-section-3" aria-hidden="true"></i>
+                                             <i class="fa fa-star fa-section-3 color-gr" aria-hidden="true"></i>
+                                          
+                                </div>
+                            </div>
+
+                            </div>
+                            <div class="row section-4__level-top">
+                                <div class="col-12 ">
+                                     <div class="section-4__level">
+                                <div class="section-4__level-title">Appearance</div>
+                                <div class="section-4__level-text">5</div>
+                            </div>
+                                </div>
+                            </div>
+                             <div class="row section-4__level-top">
+                                <div class="col-12 ">
+                                     <div class="section-4__level">
+                                <div class="section-4__level-title1">Appearance</div>
+                                <div class="section-4__level-text">4</div>
+                            </div>
+                                </div>
+                            </div>
+                             <div class="row section-4__level-top">
+                                <div class="col-12 ">
+                                     <div class="section-4__level">
+                                <div class="section-4__level-title">Appearance</div>
+                                <div class="section-4__level-text">5</div>
+                            </div>
+                                </div>
+                            </div>
+                             <div class="row section-4__level-top">
+                                <div class="col-12 ">
+                                     <div class="section-4__level">
+                                <div class="section-4__level-title1">Appearance</div>
+                                <div class="section-4__level-text">4</div>
+                            </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-sm-8 col-8">
+                        <div class="section-4__box-right">
+                            <div class="section-4__box-title-r">
+                                Impressed with the look and feel
+                            </div>
+                            <div class="section-4__box-desc-r">
+                               By Diana  <span class="section-4__box-span">January 12 2018</span> 
+                            </div>
+                            <div class="section-4__box-head">2017 Honda Ridgeline</div>
+                            <div class="section-4__box-text2">Vivamus tempus, odio eget pulvinar aliquam, dui lectus blandit nisi, sed consequat mi risus et lectus. Quisque eget ante at odio scelerisque faucibus. Aenean fringilla vestibulum rutrum. Fusce congue eros lorem, et ultrices sapien convallis molestie. Integer mattis, purus non blandit ullamcorper, ante sem facilisis ante, non commodo mauris dolor vel velit. Proin quis varius lorem, quis suscipit ligula. Morbi ac sodales elit. Aenean finibus sit amet lectus at varius.
+                            </div>
+                            <div class="section-4__box-text3">Was this review helpful for you?</div>
+                            <img src="img/like-button.png" class="section-4__box-img1" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row section-4__btn-top">
+                    <div class="col-7">
+                        <button type="button" class="section-3__btn">Load More Reviews</button>
+
+                    </div>
+                    <div class="col-5">
+                        <button type="button" class="section-3__btn1">Buy this Product</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+
+        <div class="section-6 seats-covers-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 text-center section-title">
+                        <p class="recent-title">Similar Seat Covers</p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="section-6-carousel owl-carousel">
+                            <div class="section-6-carousel__card card" id="card-1">
+                                <div class="card-header">
+                                    <p>CalTrend</p>
+                                    <a href="#">Leather Seat Covers</a>
+                                    <div class="card-rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <span class="section-6-carousel__description-reviews">
+                                            <span>231</span> reviews</span>
+                                    </div>
+                                </div>
+                                <img class="card-img-top img-fluid" src="img/section-3-img-1.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <div class="card-description">
+                                        <div class="section-6-carousel__cardColors">
+                                            <img src="img/section-3-img-1-color-1.png" alt="color">
+                                            <img src="img/section-3-img-1-color-2.png" alt="color">
+                                            <img src="img/section-3-img-1-color-3.png" alt="color">
+                                        </div>
+                                        <div class="section-6-carousel__cardPrice">
+                                            <p class="section-6-carousel__cardPrice-title">From</p>
+                                            <p>
+                                                $94<span>.57</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary section-6-carousel__addToCartBtn">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="section-6-carousel__card card" id="card-1">
+                                <div class="card-header">
+                                    <p>CalTrend</p>
+                                    <a href="#">DuraPlus Seat Covers</a>
+                                    <div class="card-rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <span class="section-6-carousel__description-reviews">
+                                            <span>350</span> reviews</span>
+                                    </div>
+                                </div>
+                                <img class="card-img-top img-fluid" src="img/section-3-img-2.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <div class="card-description">
+                                        <div class="section-6-carousel__cardColors">
+                                            <img src="img/section-1-color-1.png" alt="color">
+                                            <img src="img/section-1-color-4.png" alt="color">
+                                            <img src="img/section-3-img-1-color-2.png" alt="color">
+                                        </div>
+                                        <div class="section-6-carousel__cardPrice">
+                                            <p class="section-6-carousel__cardPrice-title">From</p>
+                                            <p>
+                                                $406<span>.41</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary section-6-carousel__addToCartBtn">Add to Cart</button>
+                                </div>
+                            </div>
+                              <div class="section-6-carousel__card card" id="card-1">
+                                <div class="card-header">
+                                    <p>CalTrend</p>
+                                    <a href="#">Velour Seat Covers</a>
+                                    <div class="card-rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <span class="section-6-carousel__description-reviews">
+                                            <span>80</span> reviews</span>
+                                    </div>
+                                </div>
+                                <img class="card-img-top img-fluid" src="img/section-3-img-3.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <div class="card-description">
+                                        <div class="section-6-carousel__cardColors">
+                                            <img src="img/section-3-img-1-color-1.png" alt="color">
+                                            <img src="img/section-1-color-6.png" alt="color">
+                                            <img src="img/section-1-color-3.png" alt="color">
+                                        </div>
+                                        <div class="section-6-carousel__cardPrice">
+                                            <p class="section-6-carousel__cardPrice-title">From</p>
+                                            <p>
+                                                $259<span>.82</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary section-6-carousel__addToCartBtn">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="section-6-carousel__card card" id="card-1">
+                                <div class="card-header">
+                                    <p>CalTrend</p>
+                                    <a href="#">Leather Seat Covers</a>
+                                    <div class="card-rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <span class="section-6-carousel__description-reviews">
+                                            <span>231</span> reviews</span>
+                                    </div>
+                                </div>
+                                <img class="card-img-top img-fluid" src="img/section-3-img-1.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <div class="card-description">
+                                        <div class="section-6-carousel__cardColors">
+                                            <img src="img/section-3-img-1-color-1.png" alt="color">
+                                            <img src="img/section-3-img-1-color-2.png" alt="color">
+                                            <img src="img/section-3-img-1-color-3.png" alt="color">
+                                        </div>
+                                        <div class="section-6-carousel__cardPrice">
+                                            <p class="section-6-carousel__cardPrice-title">From</p>
+                                            <p>
+                                                $94<span>.57</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary section-6-carousel__addToCartBtn">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="section-6-carousel__card card" id="card-1">
+                                <div class="card-header">
+                                    <p>CalTrend</p>
+                                    <a href="#">DuraPlus Seat Covers</a>
+                                    <div class="card-rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <span class="section-6-carousel__description-reviews">
+                                            <span>350</span> reviews</span>
+                                    </div>
+                                </div>
+                                <img class="card-img-top img-fluid" src="img/section-3-img-2.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <div class="card-description">
+                                        <div class="section-6-carousel__cardColors">
+                                            <img src="img/section-1-color-1.png" alt="color">
+                                            <img src="img/section-1-color-4.png" alt="color">
+                                            <img src="img/section-3-img-1-color-2.png" alt="color">
+                                        </div>
+                                        <div class="section-6-carousel__cardPrice">
+                                            <p class="section-6-carousel__cardPrice-title">From</p>
+                                            <p>
+                                                $406<span>.41</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary section-6-carousel__addToCartBtn">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="section-6-carousel__card card" id="card-1">
+                                <div class="card-header">
+                                    <p>CalTrend</p>
+                                    <a href="#">Velour Seat Covers</a>
+                                    <div class="card-rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <span class="section-6-carousel__description-reviews">
+                                            <span>80</span> reviews</span>
+                                    </div>
+                                </div>
+                                <img class="card-img-top img-fluid" src="img/section-3-img-3.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <div class="card-description">
+                                        <div class="section-6-carousel__cardColors">
+                                            <img src="img/section-3-img-1-color-1.png" alt="color">
+                                            <img src="img/section-3-img-1-color-2.png" alt="color">
+                                            <img src="img/section-3-img-1-color-3.png" alt="color">
+                                        </div>
+                                        <div class="section-6-carousel__cardPrice">
+                                            <p class="section-6-carousel__cardPrice-title">From</p>
+                                            <p>
+                                                $259<span>.82</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary section-6-carousel__addToCartBtn">Add to Cart</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <span class="section-6-CarouselArrows__prev">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        </span>
+                        <span class="section-6-CarouselArrows__next">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- recent article-->
+        <div class="recent-articles section-gutters">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 text-center section-title">
+                        <p class="recent-title">Recent Articles</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12 content-semi-gutter">
+                        <div class="bottom-articles owl-carousel">
+                            <div class="bottom-article-item">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-img-top">
+                                        <img src="img/overlay-dark.png" class="article-overlay img-fluid" alt="Article">
+                                        <img src="img/image-article-1.png" class="article-img img-fluid" alt="Article">
+                                        <div class="main-article__text">
+                                            <p class="article-date">05 Jan 2018</p>
+                                            <a href="#" class="article-title">Lorem lolorl aoo iqjwasd asd as o iqjmw oiquwm ipsum</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="article-short"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi hic
+                                            ad illo eveniet facere modi sunt architecto fugiat necessitatibus? </p>
+                                        <span class="article-divider"></span>
+                                        <a href="#" class="article-read-more">Read More
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-article-item">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-img-top">
+                                        <img src="img/overlay-dark.png" class="article-overlay img-fluid" alt="Article">
+                                        <img src="img/image-article-2.png" class="article-img img-fluid" alt="Article">
+                                        <div class="main-article__text">
+                                            <p class="article-date">05 Jan 2018</p>
+                                            <a href="#" class="article-title">Lorem lolorl aoo iqjwasd asd as o iqjmw oiquwm ipsum</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="article-short"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi hic
+                                            ad illo eveniet facere modi sunt architecto fugiat necessitatibus? </p>
+                                        <span class="article-divider"></span>
+                                        <a href="#" class="article-read-more">Read More
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-article-item">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-img-top">
+                                        <img src="img/overlay-dark.png" class="article-overlay img-fluid" alt="Article">
+                                        <img src="img/image-article-3.png" class="article-img img-fluid" alt="Article">
+                                        <div class="main-article__text">
+                                            <p class="article-date">05 Jan 2018</p>
+                                            <a href="#" class="article-title">Lorem lolorl aoo iqjwasd asd as o iqjmw oiquwm ipsum</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="article-short"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi hic
+                                            ad illo eveniet facere modi sunt architecto fugiat necessitatibus? </p>
+                                        <span class="article-divider"></span>
+                                        <a href="#" class="article-read-more">Read More
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-article-item">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-img-top">
+                                        <img src="img/overlay-dark.png" class="article-overlay img-fluid" alt="Article">
+                                        <img src="img/image-article-1.png" class="article-img img-fluid" alt="Article">
+                                        <div class="main-article__text">
+                                            <p class="article-date">05 Jan 2018</p>
+                                            <a href="#" class="article-title">Lorem lolorl aoo iqjwasd asd as o iqjmw oiquwm ipsum</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="article-short"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi hic
+                                            ad illo eveniet facere modi sunt architecto fugiat necessitatibus? </p>
+                                        <span class="article-divider"></span>
+                                        <a href="#" class="article-read-more">Read More
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-article-item">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-img-top">
+                                        <img src="img/overlay-dark.png" class="article-overlay img-fluid" alt="Article">
+                                        <img src="img/image-article-2.png" class="article-img img-fluid" alt="Article">
+                                        <div class="main-article__text">
+                                            <p class="article-date">05 Jan 2018</p>
+                                            <a href="#" class="article-title">Lorem lolorl aoo iqjwasd asd as o iqjmw oiquwm ipsum</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="article-short"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi hic
+                                            ad illo eveniet facere modi sunt architecto fugiat necessitatibus? </p>
+                                        <span class="article-divider"></span>
+                                        <a href="#" class="article-read-more">Read More
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="articles-bottomCarouselArrows__prev">
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            </span>
+                            <span class="articles-bottomCarouselArrows__next">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+    
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-12 back-to-top-anchor text-center">
+                        <p>BACK TO TOP
+                            <i class="fa fa-angle-up" aria-hidden="true"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="footer">
+                        <div class="section-semi-gutters">
+                            <div class="col-12 footer-menus col-md-7">
+                                <div class="footer-menu-item">
+                                    <a class="footer-menu-title">Need help?</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Repudiandae fuga deserunt!</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Laudantium a odit rem perspiciatis.</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Reiciendis voluptatibus nostrum!</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer-menu-item">
+                                    <a class="footer-menu-title">Orders</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Repudiandae fuga deserunt!</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Laudantium a odit rem perspiciatis.</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Reiciendis voluptatibus nostrum!</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer-menu-item">
+                                    <a class="footer-menu-title">Resources</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Repudiandae fuga deserunt!</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Laudantium rem periciatis.</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Reiciendis ptatibus nrum!</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer-menu-item">
+                                    <a class="footer-menu-title">About Us</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Repudiandae fuga deserunt!</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Laudan rem perspiciatis.</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Reicie luptaus nostrum!</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-5 footer-contact">
+                                <div class="footer-menu-item">
+                                    <a class="footer-menu-title">Contact Us</a>
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-map-o" aria-hidden="true"></i>
+                                            <a href="#" class="bold">GrokAuto</a>
+                                        </li>
+                                        <li>
+                                            2887 Pleasant Hill Road
+                                            <br>Los Angeles, CA, 90017
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer-menu-item contact-mt">
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                            <a href="#" class="bold">Phone Number</a>
+                                        </li>
+                                        <li>
+                                            562 - 205 - 0992
+                                            <br> 323 - 304 - 3913
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer-menu-item contact-mt">
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                                            <a href="#" class="bold">Email:</a>
+                                        </li>
+                                        <li>
+                                            Info@GrokAuto.com
+                                            <br> Sales@GrokAuto.com
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12 footer-copy">
+                        <div class="footer-copy__text">
+                            <p>Copyright © 2018 GrokAuto.com. All rights reserved.</p>
+                        </div>
+                        <div class="footer-copy__social">
+                            <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.2/owl.carousel.min.js"></script>
+    <script src="js/carousels-config.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="carousel/js/jQuery.verticalCarousel.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    
+        
+</body>
+
+</html>

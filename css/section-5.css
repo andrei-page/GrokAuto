@@ -1,0 +1,118 @@
+.section-5-title {
+    font-size: 2.25rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.section-5 {
+    background-color: #fff;
+    padding: 90px 0;
+}
+
+.section-5-carousel {
+    padding: 0 20px;
+}
+
+.section-5-carousel__card .card-header p {
+    margin: 0;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: #727a88;
+}
+
+.section-5-carousel__card .card-header a {
+    font-size: 	1.0625rem;
+    font-weight: 600;
+    color: #0b56c5;
+    text-decoration: underline;
+}
+
+.section-5-carousel__card .card-header i {
+    color: var(--text-accent);
+}
+
+.section-5-carousel__card .card-header .section-5-carousel__description-reviews {
+    color: #1e222c;
+    font-size: 	0.6875rem;
+    font-weight: 600;
+}
+
+.section-5-carousel__cardColors {
+    display: inline-block;
+}
+
+.card-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-5-carousel__cardPrice {
+    display: inline-block;
+}
+
+.section-5-carousel__cardColors img {
+    display: inline!important;
+    width: auto!important;
+}
+
+.section-5-carousel__cardPrice p {
+    margin: 0;
+}
+
+.section-5-carousel__cardPrice p:last-child {
+    font-size: 	1.625rem;
+    font-weight: 600;
+}
+
+.section-5-carousel__cardPrice p:last-child span {
+    font-size: 	1.125rem;
+}
+
+.section-5-carousel__cardPrice-title {
+    font-size: 	0.625rem;
+    font-weight: 600;
+}
+
+.section-5-carousel__addToCartBtn {
+    margin-top: 10px;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 	0.75rem;
+    font-weight: 600;
+    background-color: transparent;
+    color: var(--text-accent);
+    border: 1px solid var(--text-accent);
+}
+
+.section-5 .card-header {
+    border-bottom: 0;
+}
+
+.section-5 .card-header {
+    background-color: transparent;
+}
+
+.section-5 .card-img-top {
+    padding: .75rem 1.25rem;
+}
+
+.section-5-CarouselArrows__prev {
+    position: absolute;
+    left: 5px;
+    z-index: 3;
+    top: 40%;
+    font-size: 3rem;
+    cursor: pointer;
+    color: #d3d5dc;
+}
+
+.section-5-CarouselArrows__next {
+    position: absolute;
+    right: 5px;
+    z-index: 3;
+    top: 40%;
+    font-size: 3rem;
+    cursor: pointer;
+    color: #d3d5dc;
+}

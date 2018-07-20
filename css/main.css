@@ -1,0 +1,149 @@
+@import url("header.css");
+@import url("featured.css");
+@import url("footer.css");
+@import url("article.css");
+@import url("section-1.css");
+@import url("section-2.css");
+@import url("section-3.css");
+@import url("section-4.css");
+@import url("section-5.css");
+@import url("section-6.css");
+@import url("section-change.css");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+
+.page-wrapper {
+    overflow: hidden;
+}
+:root {
+    --text-color: #1e222c;
+    --text-accent: #ce4234;
+    --main-font: 'Montserrat', sans-serif;
+    --link-color: #0b56c5;
+}
+.owl-dots {
+    display: none!important;
+}
+.container-fluid{
+    overflow: hidden;
+    
+}
+* {
+    font-family: var(--main-font);
+}
+.section-title--one{
+    font-size: 1.625rem;
+    color: #fff;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+.section-title {
+    font-size: 2.25rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+.text-center-up{
+    margin-bottom: 90px;
+    text-align: center;
+}
+
+.section-gutters {
+    padding: 90px 0;
+    background-color: #f3f6fa;
+}
+
+.section-semi-gutters {
+    padding: 40px 0;
+}
+
+.content-gutter {
+    margin-top: 44px;
+}
+
+.content-semi-gutter {
+    margin-top: 22px;
+}
+
+.relative {
+    position: relative;
+}
+
+.owl-stage {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+}
+
+.view-all-btn {
+    background-color: var(--text-accent)!important;
+    border-color: var(--text-accent)!important;
+    font-weight: 600;
+    font-size: 0.6875rem;
+    padding: 10px;
+}
+
+.carousel-title p{
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.carousel-title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.carousel-title button {
+    position: absolute;
+    z-index: 1;
+}
+
+.recent-title{
+    padding-top: 90px;
+}
+.carousel-title img {
+    position: absolute;
+    left: 0;
+    z-index: 0;
+}
+
+.featured-brands img {
+    margin-right: 25px;
+    margin-top: 30px;
+}
+
+.featured-brands {
+    background-color: #f3f6fa;
+}
+
+@media screen and (max-width: 767px) {
+    .carousel-title img {
+        display: none;
+    }
+
+    .carousel-title button {
+        position: static;
+    }
+
+    .carousel-title {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .carousel-title span {
+        text-align: center;
+    }
+
+    .carousel-title span br {
+        display: none;
+    }
+
+    .section-4, .section-5, .section-6,  .section-3 {
+        padding: 40px 0;
+    }
+}
